@@ -95,6 +95,19 @@ for inclusion in the work by you, as defined in the Apache-2.0 license, shall be
 dual licensed as above, without any additional terms or conditions.
 ```
 
+To make sure that the license files are published in crates.io packages,
+you can either:
+
+* Avoid using the
+  [`include`](https://doc.rust-lang.org/cargo/reference/manifest.html#the-exclude-and-include-fields)
+  field.
+* Explicitly list the license files in the
+  [`include`](https://doc.rust-lang.org/cargo/reference/manifest.html#the-exclude-and-include-fields)
+  field.
+* Or, use the
+  [`license-file`](https://doc.rust-lang.org/cargo/reference/manifest.html#the-license-and-license-file-fields)
+  field if the crate is single-licensed.
+
 Besides the dual MIT/Apache-2.0 license, another common licensing approach used
 by Rust crate authors is to apply a single permissive license such as MIT or
 BSD. This license scheme is also entirely compatible with Rust's, because it
